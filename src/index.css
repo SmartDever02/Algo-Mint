@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    mix-blend-mode: normal;
+    background: url('./images/home/background.svg');
+  }
+
+  .scene {
+    width: calc(100vw - 11px);
+    background: rgb(7, 10, 26);
+    background: linear-gradient(
+      90deg,
+      rgba(7, 10, 26, 1) 0%,
+      rgba(7, 10, 26, 0.8547794117647058) 15%,
+      rgba(7, 10, 26, 0.804359243697479) 33%,
+      rgba(7, 10, 26, 0.7987570028011204) 67%,
+      rgba(7, 10, 26, 0.85) 85%,
+      rgba(7, 10, 26, 1) 100%
+    );
+  }
+  .radialBorder {
+    opacity: 0.63;
+    background-image: linear-gradient(
+      90deg,
+      #ffe6b1 0%,
+      #fff1cc 6%,
+      #fffde7 11%,
+      #fcf8dd 12%,
+      #f6eac2 15%,
+      #ebd498 18%,
+      #ddb65d 22%,
+      #d09b27 25%,
+      #d19d28 30%,
+      #d4a52e 33%,
+      #dbb438 35%,
+      #e4c846 38%,
+      #f3e85c 40%,
+      #e9de5c 44%,
+      #cfc65e 50%,
+      #a49e60 58%,
+      #797563 65%,
+      #6f7d64 70%,
+      #5d8766 74%,
+      #3b756d 77%,
+      #216771 79%,
+      #0e5d75 82%,
+      #035777 84%,
+      #015779 87%,
+      #1f719b 88%,
+      #3685b5 90%,
+      #4693c8 91%,
+      #509cd3 92%,
+      #5ea5d9 94%,
+      #80b7e2 95%,
+      #9ac6e9 96%,
+      #add0ee 98%,
+      #b8d6f1 99%,
+      #bcd9f2 100%
+    );
+  }
+  .smAlcoBack {
+    background-image: radial-gradient(
+      51.13% 49.09% at 49.83% 50.22%,
+      #fffbcc 0%,
+      #faf1ba 11%,
+      #efd98e 34%,
+      #eed688 37%,
+      #ebbb10 69%,
+      #c3922e 100%
+    );
+  }
+
+  .linearBlueFamliy {
+    background: linear-gradient(
+      90deg,
+      #262261 0%,
+      #293181 14%,
+      #2b388f 22%,
+      #00adee 50%,
+      #2b388f 83%,
+      #2a3487 88%,
+      #282b74 94%,
+      #262261 99%
+    );
+  }
+
+  .left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: calc(32vw - 20px);
+    height: 22.642vw;
+  }
+
+  .leftBack {
+    opacity: 0.3;
+    background: radial-gradient(
+      51.13% 49.09% at 49.83% 50.22%,
+      #fffbcc 0%,
+      #faf1ba 11%,
+      #efd98e 34%,
+      #eed688 37%,
+      #ebbb10 69%,
+      #c3922e 100%
+    );
+  }
+
+  .leftBackOver {
+    opacity: 0.5;
+    background-blend-mode: color-dodge;
+    mix-blend-mode: color-dodge;
+    background: radial-gradient(
+      50.15% 50.02% at 50.77% 50%,
+      #ffffff 0%,
+      #000000 100%
+    );
+  }
+
+  .overBack {
+    background: linear-gradient(
+      90deg,
+      #01050d 0%,
+      #0c0f17 1%,
+      #3e4147 6%,
+      #6b6d71 11%,
+      #919295 17%,
+      #b0b0b2 23%,
+      #c7c8c9 28%,
+      #d8d9d9 35%,
+      #e2e2e2 42%,
+      #e6e6e6 50%,
+      #e2e2e2 58%,
+      #d8d8d8 65%,
+      #c7c7c7 72%,
+      #b0b0b0 77%,
+      #919191 83%,
+      #6b6b6b 89%,
+      #3e3e3e 94%,
+      #0b0b0b 99%,
+      #000000 100%
+    );
+    background-blend-mode: color-dodge;
+    mix-blend-mode: color-dodge;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fa6862;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e5463f;
+  }
+}

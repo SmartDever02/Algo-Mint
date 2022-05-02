@@ -1,0 +1,28 @@
+<svg width="31" height="59" viewBox="0 0 31 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dii_261_388)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.4503 53.2443V28.9881H27.9307L29.1494 19.526H19.4672V13.6015C19.4672 10.944 20.3813 8.87895 24.3253 8.87895H29.471V0.31394C28.2354 0.31394 25.2224 0.0261832 21.8878 0.0261832C15.4556 -0.396989 9.88662 4.35947 9.46345 10.6563C9.42959 11.2487 9.42959 11.8581 9.48037 12.4505V19.5429H1V29.005H9.48037V53.2612H19.4672L19.4503 53.2443Z" fill="#0D3864"/>
+</g>
+<defs>
+<filter id="filter0_dii_261_388" x="-1" y="0" width="31.471" height="58.2612" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="0.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_261_388"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_261_388" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-3"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.85 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_261_388"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-2"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.7375 0 0 0 0 0.7375 0 0 0 0 0.7375 0 0 0 0.9 0"/>
+<feBlend mode="normal" in2="effect2_innerShadow_261_388" result="effect3_innerShadow_261_388"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,85 @@
+import React, { useState } from 'react';
+import { useEffect } from 'react';
+// import { CSSTransitionGroup } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
+import '../../../resources/style/nft-carousel.css';
+
+export const Carousel = ({ items, activeIndex, direction }: PropsType) => {
+  const [_items, setItems] = useState(items);
+  const [active, setActive] = useState(activeIndex);
+  const [_direction, setDirection] = useState(direction);
+
+  useEffect(() => {
+    let inverval = setInterval(() => {
+      moveRight();
+    }, 3000);
+
+    return () => {
+      clearInterval(inverval);
+    };
+  });
+  const generateItems = () => {
+    var items = [];
+    var level;
+    for (var i = active - 2; i < active + 3; i++) {
+      var index = i;
+      if (i < 0) {
+        index = _items.length + i;
+      } else if (i >= _items.length) {
+        index = i % _items.length;
+      }
+      level = active - i;
+      items.push(<Item key={index} src={_items[index]} level={level} />);
+    }
+    return items;
+  };
+
+  const moveLeft = () => {
+    var newActive = active;
+    newActive--;
+    setActive(newActive < 0 ? _items.length - 1 : newActive);
+    setDirection('left');
+  };
+
+  const moveRight = () => {
+    var newActive = active;
+    setActive((newActive + 1) % _items.length);
+    setDirection('right');
+  };
+
+  return (
+    <div id='carousel' className='noselect'>
+      <CSSTransition>{generateItems()}</CSSTransition>
+      <CSSTransitionGroup
+        transitionName={_direction}
+        transitionEnterTimeout={500}
+        transitionLeaveTimeout={300}
+      >
+        {generateItems()}
+      </CSSTransitionGroup>
+    </div>
+  );
+};
+
+const Item = ({ level, src }: ItemPropsType) => {
+  const className = 'item level' + level;
+  return (
+    <div className={className}>
+      <img src={getImages(src)} />
+      <div className={'background-filter'} />
+    </div>
+  );
+};
+
+interface PropsType {
+  items: any[];
+  activeIndex: number;
+  direction: string;
+}
+
+interface ItemPropsType {
+  level: number;
+  src: string;
+}
+
+export default Carousel;
